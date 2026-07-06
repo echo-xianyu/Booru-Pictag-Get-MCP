@@ -1,0 +1,11 @@
+{
+  "_readme": "Override / extend built-in tag-conflict rules. Format mirrors the built-in table: each key is a trigger tag (space or underscore form accepted), value is an object with `blocks` (list of tags to drop when the trigger is present) and `exceptions` (context tag -> list of blocks NOT to drop when that context tag is ALSO present). On merge: new triggers are added; existing triggers get their blocks/exceptions unioned with the override — overrides can only widen, never narrow, a built-in rule. Set BOORU_TAG_CONFLICTS_OVERRIDES=/path/to/this.json to force this file's use from any location.",
+  "_example": {
+    "hatsune miku": {
+      "blocks": ["megurine luka"],
+      "exceptions": {
+        "duet": ["megurine luke"]
+      }
+    }
+  }
+}

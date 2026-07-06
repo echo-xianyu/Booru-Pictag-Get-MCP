@@ -1,0 +1,60 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+MANIFEST
+
+# venvs / uv
+.venv/
+venv/
+.python-version
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Project-specific ----
+# Local data dumps (generated; can be large — keep out of git)
+data/tag_categories.json
+
+# Tag-conflict overrides (user-private — may contain user's rules/discord)
+data/tag_conflicts_overrides.json
+# (the .example.json IS committed as a reference sample)
+
+# Any captured MCP probe output / debug logs
+last_out.txt
+*.log
+mcp_probe_*.json
+
+# Local env files — never commit secrets
+.env
+.env.*
+*.local
+secrets.json
+api_keys.txt
+
+# nuitka / pyinstaller trials (if you ever try native packaging)
+*.exe
+build_*
