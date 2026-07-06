@@ -16,7 +16,7 @@ This is a **Python port + MCP integration** of [`booru-prompt-gallery`](https://
 
 ## Install
 
-### Option A — local path (zero publishing required)
+### Option A — local path
 
 Clone, then point `uvx` at the local checkout:
 
@@ -26,7 +26,7 @@ cd Booru-Pictag-Get-MCP
 uvx --from . booru-pictag-get-mcp
 ```
 
-### Option B — cloud / direct from GitHub (no PyPI needed)
+### Option B — cloud / direct from GitHub
 
 ```bash
 uvx --from "git+https://github.com/echo-xianyu/Booru-Pictag-Get-MCP" booru-pictag-get-mcp
