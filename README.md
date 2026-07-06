@@ -16,8 +16,6 @@ This is a **Python port + MCP integration** of [`booru-prompt-gallery`](https://
 
 ## Install
 
-`uvx` runs the server in its own isolated venv — it never touches your system Python or any other tool's environment (e.g. gradio). Both forms below share that property.
-
 ### Option A — local path (zero publishing required)
 
 Clone, then point `uvx` at the local checkout:
@@ -34,11 +32,6 @@ uvx --from . booru-pictag-get-mcp
 uvx --from "git+https://github.com/echo-xianyu/Booru-Pictag-Get-MCP" booru-pictag-get-mcp
 ```
 
-### Option C — PyPI (after I publish; placeholder for now)
-
-```bash
-uvx booru-pictag-get-mcp
-```
 
 ### HTTP/2 extra (recommended — required for e621)
 
@@ -75,8 +68,6 @@ e621's TLS stack frequently errors out on HTTP/1.1 keep-alive. The HTTP client a
 ```
 
 > **API key policy (Aug 2025):** Danbooru, AIBooru, and e621 work with **no key**. Gelbooru and Rule34 tightened auth and now require keys. Without them, those two providers return 401; the others keep working.
-
-> **Never commit API keys.** `.gitignore` already excludes `.env*`, `data/tag_conflicts_overrides.json`, etc. Keep your keys in environment variables only.
 
 ---
 
